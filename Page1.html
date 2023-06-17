@@ -4,37 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotel XYZ - Welcome</title>
     <link rel="stylesheet" href="asset/css/page1.css">
+
 </head>
 
 <body>
-    <div class="form-box">
-        <div class="container">
-            <div class="header">
-                <h2>Welcome To Our Hotel</h2>
-            </div>
-            <h2 id="audio">nanti di ganti juga</h2>
-            <audio controls>
-                <source src="asset/img/Music-Lobby-Hotel.mp3" type="audio/mp3">
-            </audio>
-            <h2 id="video">Nanti di ganti</h2>
-            <video controls width="300" height="200" loop auto muted preload="auto">
-                <source src="asset/img/Cinematic-Hotel.mp4" type="video/mp4">
-                <track kind="captions" src="asset/img/Cinematic-Hotel.mp4" srclang="en" label="English">
-                </video>
-            <h2 id="gambar">nanti di ganti juga</h2>
-            <picture>
-                <img src="asset/img/Luxury-Class.jpg" alt="Luxury-Class" width="400" height="200">
-            </picture>
-            <button type="button"><a href="Formpage.html">Next</a></button>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <audio src="asset/img/Music-Lobby-Hotel.mp3" autoplay loop></audio>
+        <video autoplay muted loop>
+      <source src="asset/img/Cinematic-Hotel.mp4" type="video/mp4">
+    </video>
+        <div class="hero-content">
+            <h1>Welcome to Hotel XYZ</h1>
+            <p>Experience luxury and comfort during your stay</p>
+            <a href="#" class="btn">Book Now</a>
         </div>
-    </div>
+    </section>
 
+    <section class="features">
+        <h2>Our Services and Facilities</h2>
+        <div class="feature-box">
+            <div class="feature">
+                <img src="room-service.jpg" alt="Room Service">
+                <h3>Room Service</h3>
+                <p>Enjoy our 24/7 room service for your convenience.</p>
+            </div>
+            <div class="feature">
+                <img src="swimming-pool.jpg" alt="Swimming Pool">
+                <h3>Swimming Pool</h3>
+                <p>Relax and unwind in our spacious swimming pool.</p>
+            </div>
+            <div class="feature">
+                <img src="spa.jpg" alt="Spa">
+                <h3>Spa</h3>
+                <p>Pamper yourself with a rejuvenating spa treatment.</p>
+            </div>
+        </div>
+    </section>
 
-
-
-    <script src="asset/js/page1.js"></script>
+    <footer>
+        <p>&copy; 2023 Hotel XYZ. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

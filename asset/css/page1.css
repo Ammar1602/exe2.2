@@ -1,38 +1,106 @@
-h1 {
-    font-family: 'Heebo', sans-serif
+/* CSS Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h2 {
-    font-family: 'Heebo', sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    height: 400px;
+}
+
+.hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    background: white;
-    color: red;
-    box-shadow: 1px 1px 2px rgb(54, 1, 1);
-    padding: 3px 10px;
-    cursor: pointer;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
 }
 
 .btn {
-    justify-content: left;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.features {
     text-align: center;
+    padding: 50px;
 }
 
-.container {
-    display: grid;
-    place-items: center;
-    height: 70vh;
-    /* Menyesuaikan dengan ketinggian yang diinginkan */
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
 }
 
-.form-box {
-    border: 1px solid #ccc;
+.feature-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.feature {
+    max-width: 300px;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
     padding: 20px;
-    width: 400px;
-    height: 800px;
-    /* Sesuaikan dengan lebar yang diinginkan */
-    margin: 0 auto;
-    /* Untuk mengatur posisi kotak di tengah halaman */
-    border: solid black;
+    text-align: center;
 }

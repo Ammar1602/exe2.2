@@ -1,43 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Reservasi Hotel</title>
     <link rel="stylesheet" href="asset/css/formpage.css">
-    <title>Praktikum 9</title>
 </head>
 
 <body>
-    <div class="form-box">
-        <div class="container">
-            <div class="header">
-                <h3>Form Pendaftaran</h3>
-            </div>
-            <form action="">
-                <label for="nama">Nama</label><br>
-                <input type="text" placeholder="Nama" id="nama"><br><br>
-                <label for="nim">Identitas</label><br>
-                <input type="text" placeholder="Identitas" id="identitas"><br><br>
-                <label for="telpon">Telpon</label><br>
-                <input type="text" placeholder="Telpon" id="telpon"><br><br>
-                <label for="tanggal">Tanggal</label><br>
-                <input type="date" id="tanggal" name="tanggal"><br>
-                <p>
-                    PIlih Ruangan
-                    <select>
-                            <option></option>
-                            <option>Single Bed</option>
-                            <option>Double Bed</option>
-                            <option>Luxury Room</option>
-                            <option>Suite  Room</option>
-                        </select>
-                </p>
-                <textarea placeholder="Ketik Jika Ada Tambahan" name="Tambahan" id="tambahan" cols="30" rows="5"></textarea><br><br>
-                <button type="submit" onclick="KirimData()">Kirim</button>
-            </form>
-        </div>
-    </div>
+    <h2>Form Reservasi Hotel</h2>
+    <form action="proses_reservasi.php" method="POST" onsubmit="return validateForm()">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telp">No. Telepon:</label>
+        <input type="tel" id="telp" name="telp" required>
+
+        <label for="tanggal_checkin">Tanggal Check-in:</label>
+        <input type="date" id="tanggal_checkin" name="tanggal_checkin" required>
+
+        <label for="tanggal_checkout">Tanggal Check-out:</label>
+        <input type="date" id="tanggal_checkout" name="tanggal_checkout" required>
+
+        <label for="jumlah_tamu">Jumlah Tamu:</label>
+        <input type="number" id="jumlah_tamu" name="jumlah_tamu" required>
+
+        <label for="kamar">Pilihan Kamar:</label>
+        <select id="kamar" name="kamar" required>
+        <option value="">Pilih kamar</option>
+        <option value="kamar1">Kamar 1</option>
+        <option value="kamar2">Kamar 2</option>
+        <option value="kamar3">Kamar 3</option>
+        </select><br><br>
+
+        <input type="submit" value="Reservasi">
+    </form>
+
+    <a href="Page1.html" class="back-button">Kembali</a>
 
     <script src="asset/js/formpage.js"></script>
 </body>

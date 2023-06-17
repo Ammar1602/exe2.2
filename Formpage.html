@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/formpage.css">
+    <title>Praktikum 9</title>
+</head>
+
+<body>
+    <div class="form-box">
+        <div class="container">
+            <div class="header">
+                <h3>Form Pendaftaran</h3>
+            </div>
+            <form action="">
+                <label for="nama">Nama</label><br>
+                <input type="text" placeholder="Nama" id="nama"><br><br>
+                <label for="nim">Identitas</label><br>
+                <input type="text" placeholder="Identitas" id="identitas"><br><br>
+                <label for="telpon">Telpon</label><br>
+                <input type="text" placeholder="Telpon" id="telpon"><br><br>
+                <label for="tanggal">Tanggal</label><br>
+                <input type="date" id="tanggal" name="tanggal"><br>
+                <p>
+                    PIlih Ruangan
+                    <select>
+                            <option></option>
+                            <option>Single Bed</option>
+                            <option>Double Bed</option>
+                            <option>Luxury Room</option>
+                            <option>Suite  Room</option>
+                        </select>
+                </p>
+                <textarea placeholder="Ketik Jika Ada Tambahan" name="Tambahan" id="tambahan" cols="30" rows="5"></textarea><br><br>
+                <button type="submit" onclick="KirimData()">Kirim</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="asset/js/formpage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.container {
+    display: grid;
+    place-items: center;
+    height: 70vh;
+    /* Menyesuaikan dengan ketinggian yang diinginkan */
+}
+
+.form-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    /* Sesuaikan dengan lebar yang diinginkan */
+    margin: 0 auto;
+    /* Untuk mengatur posisi kotak di tengah halaman */
+    border: solid black;
+}

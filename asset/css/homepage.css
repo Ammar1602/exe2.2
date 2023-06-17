@@ -1,0 +1,15 @@
+.btn {
+    justify-content: center;
+    text-align: center;
+}
+
+.login,
+a {
+    background-color: #2990b9;
+    columns: white;
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    border: transparent;
+    border-radius: 5px;
+}
